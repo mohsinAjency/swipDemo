@@ -16,12 +16,8 @@ export class HomePage {
   }
   ngAfterViewInit() {
     this.slides.direction = 'vertical';
+    // this.slides.effect = 'coverflow'
 
-  }
-  tapEvent(event){
-    console.log (event.additionalEvent, event.angle)
-    this.panV = event.angle;
-    this.panEvent = event.additionalEvent
   }
 
 }
