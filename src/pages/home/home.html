@@ -5,13 +5,30 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+   
+   <!-- blog card -->
+   <div class="blogs">
+      <ion-card class="blogs__content">
+         <!-- card header -->
+         <div class="blogs__content__header">
+            <div class="author">20/12 <span class="author__name">Patanjali Pahwa</span></div>
+         </div>
+         <!-- card body -->
+         <div class="blogs__content__body">
+            <h1 class="post-title">One Rocket, Many Satellites: Isro’s final push to India’s commercial space lift-off</h1>
+         </div>
+         <!-- card footer -->
+         <div class="blogs__content__footer">
+            <div class="comment">
+               12 Comments
+            </div>
+            <div class="actions">
+               <ion-icon name="redo"></ion-icon>
+               <ion-icon name="bookmark"></ion-icon>
+            </div>
+         </div>
+      </ion-card>
+   </div>
+
+
 </ion-content>

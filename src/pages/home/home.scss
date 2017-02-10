@@ -1,3 +1,65 @@
 page-home {
-
+	.blogs{
+		margin: -15px;
+		background-image: url('../assets/rocket.jpg');
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	// background-position: center;
+    	height: calc(100vh - 150px);
+    	display: flex;
+    	align-items: flex-end;
+		&__content{
+			margin: 0;
+    		position: relative;
+    		top: 20px;
+    		width: 65%;
+    		padding: 15px;
+    		&__header{
+    			padding-top: 5px;
+			    font-size: 0.85em;
+			    font-weight: 500;
+			    color: #808080;
+			    .author{
+			    	text-transform: uppercase;
+			    	&__name{
+			    		margin-left: 5px;
+			    	}
+			    }
+    		}
+    		&__body{
+    			.post-title{
+			    	padding: 10px 0;
+			    	line-height: 1.4;
+			    	font-size: 1.7em;
+			    	margin: 0;
+			    }
+    		}
+    		&__footer{
+    			display: flex;
+    			align-items: center;
+    			justify-content: space-between;
+    			.comment{
+    				text-transform: uppercase;
+    				font-weight: 500;
+    				color: #808080;
+    				font-size: 0.85em;
+    			}
+    			.actions{
+    				color: rgba(128, 128, 128, 0.51);
+    				.icon{
+						padding-left: 10px;
+						.ion-md-redo{
+							font-weight: 600;
+						}
+    				}
+    			}
+    		}
+		}
+	}
 }
+
+
+
+
+
+
