@@ -52,9 +52,16 @@ page-home {
     		}
     	}
 	}
+	.empty{
+		height: 56px;
+		// margin-bottom: -25px;
+	}
 	.scroll-content{
 		margin-top: 0 !important;
 		padding: 0 !important;
+	}
+	.swiper-slide{
+		align-items: flex-start;
 	}
 	.blogs{
 		margin: 0;
@@ -62,8 +69,8 @@ page-home {
     	background-repeat: no-repeat;
     	background-size: cover;
     	// background-position: center;
-    	height: calc(100vh - 50px);
-    	background-position: -140px 30px;
+    	height: calc(100vh - 80px);
+    	background-position: 30% 0;
     	display: flex;
     	align-items: flex-end;
 		&__content{
