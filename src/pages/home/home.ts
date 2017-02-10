@@ -16,6 +16,7 @@ export class HomePage {
   }
   ngAfterViewInit() {
     this.slides.direction = 'vertical';
+
   }
   tapEvent(event){
     console.log (event.additionalEvent, event.angle)

@@ -1,4 +1,9 @@
 page-home {
+	.header{
+		// &:after{
+		// 	position: static;
+		// }
+	}
 	.custom-header{
 		background-color: #fff;
     	display: flex;
@@ -47,13 +52,18 @@ page-home {
     		}
     	}
 	}
+	.scroll-content{
+		margin-top: 0 !important;
+		padding: 0 !important;
+	}
 	.blogs{
-		margin: -15px -15px 65px -15px;
+		margin: 0;
 		background-image: url('../assets/rocket.jpg');
     	background-repeat: no-repeat;
     	background-size: cover;
     	// background-position: center;
-    	height: calc(100vh - 150px);
+    	height: calc(100vh - 50px);
+    	background-position: -140px 30px;
     	display: flex;
     	align-items: flex-end;
 		&__content{
@@ -62,6 +72,7 @@ page-home {
     		top: 20px;
     		width: 65%;
     		padding: 15px;
+    		text-align: left;
     		&__header{
     			padding-top: 5px;
 			    font-size: 0.85em;
@@ -78,7 +89,7 @@ page-home {
     			.post-title{
 			    	padding: 10px 0;
 			    	line-height: 1.4;
-			    	font-size: 1.7em;
+			    	font-size: 1.5em;
 			    	margin: 0;
 			    }
     		}
