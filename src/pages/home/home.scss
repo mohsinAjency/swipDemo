@@ -1,6 +1,54 @@
 page-home {
+	.custom-header{
+		background-color: #fff;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	.toolbar-background{
+    		background: transparent;
+    	}
+    	.toolbar-content{
+    		display: flex;
+    		align-items: center;
+    		justify-content: space-between;
+    		.header-data{
+    			display: inline-flex;
+    			&.ion-md-arrow-back{
+    				flex: 0.6;
+				    display: inline-flex;
+				    font-size: 1.8em;
+				    color: #ff353b;
+    				padding-left: 10px;
+    			}
+    			&.section-title{
+    				flex: 2;
+				    display: inline-flex;
+				    text-align: center;
+				    b{
+				    	font-weight: 500;
+    					font-size: 0.95em;
+				    }
+				    .total{
+				    	display: block;
+    					font-size: 0.65em;
+    					font-weight: 400;
+				    }
+    			}
+    			&.filter{
+    				flex: 1;
+				    display: inline-flex;
+    				text-align: right;
+    				.toolbar-title{
+    					color: #ff353b;
+    					font-size: 1.2em;
+    					font-weight: 400;
+    				}
+    			}
+    		}
+    	}
+	}
 	.blogs{
-		margin: -15px;
+		margin: -15px -15px 65px -15px;
 		background-image: url('../assets/rocket.jpg');
     	background-repeat: no-repeat;
     	background-size: cover;
