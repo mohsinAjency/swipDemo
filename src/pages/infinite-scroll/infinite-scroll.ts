@@ -12,17 +12,47 @@ import { NavController, NavParams , Slides} from 'ionic-angular';
   templateUrl: 'infinite-scroll.html'
 })
 export class InfiniteScrollPage {
-
+  items: any;
   @ViewChild(Slides) slides: Slides;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.items = [
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"},
+      {id:1,name:"rrrr"}
+    ]
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfiniteScrollPage');
   }
   ngAfterViewInit() {
-    this.slides.freeMode = true
-    // this.slides.parallax = true;
-    this.slides.direction = 'vertical';
     // this.slides.effect = 'cube'
 
   }
