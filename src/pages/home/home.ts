@@ -7,9 +7,6 @@ import { NavController, Slides } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  panV:any;
-  panEvent:string;
-
   @ViewChild(Slides) slides: Slides;
   constructor(public navCtrl: NavController) {
     console.log('DONE')
