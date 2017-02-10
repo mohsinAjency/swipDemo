@@ -15,8 +15,10 @@ export class HomePage {
     console.log('DONE')
   }
   ngAfterViewInit() {
+    // this.slides.freeMode = true
+    this.slides.parallax = true;
     this.slides.direction = 'vertical';
-    // this.slides.effect = 'coverflow'
+    // this.slides.effect = 'cube'
 
   }
 
