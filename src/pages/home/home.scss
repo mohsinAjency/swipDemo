@@ -68,11 +68,13 @@ page-home {
 		background-image: url('../assets/rocket.jpg');
     	background-repeat: no-repeat;
     	background-size: cover;
-    	// background-position: center;
+    	background-position: center;
     	height: calc(100vh - 80px);
-    	background-position: 30% 0;
+    	// background-position: 30% 0;
     	display: flex;
     	align-items: flex-end;
+    	position: relative;
+    	top: 56px;
 		&__content{
 			margin: 0;
     		position: relative;
@@ -121,7 +123,12 @@ page-home {
     			}
     		}
 		}
-		
+		&.version-2{
+			background-image: url('../assets/card-1.png');
+		}
+		&.version-3{
+			background-image: url('../assets/card-2.png');
+		}
 	}
 }
 
