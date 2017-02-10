@@ -1,8 +1,8 @@
 page-infinite-scroll {
-	.header{
-		// &:after{
-		// 	position: static;
-		// }
+	.header-md{
+		&:after{
+			background-image: none;
+		}
 	}
 	.custom-header{
 		background-color: #fff;
@@ -56,6 +56,18 @@ page-infinite-scroll {
 		height: 56px;
 		// margin-bottom: -25px;
 	}
+    ion-slide{
+        &:first-child{
+            .blogs{
+                position: relative;
+                top: 112px;
+            }
+        }
+        &:not(:first-child){
+            height: auto !important;
+            margin: 15px 0 28px 0;
+        }
+    }
 	.scroll-content{
 		margin-top: 0 !important;
 		padding: 0 !important;
@@ -73,8 +85,6 @@ page-infinite-scroll {
     	// background-position: 30% 0;
     	display: flex;
     	align-items: flex-end;
-    	position: relative;
-    	top: 112px;
 		&__content{
 			margin: 0;
     		position: relative;
@@ -129,6 +139,21 @@ page-infinite-scroll {
 		&.version-3{
 			background-image: url('../assets/card-2.png');
 		}
+        &.short{
+            height: 250px;
+            .blogs__content{
+                width: 90%;
+                &__header,&__footer{
+                    color: #4c4c4c;
+                }
+                &__body{
+                    .post-title{
+                        color: #9c9c9c;
+                        font-size: 1.15em;
+                    }
+                }
+            }
+        }
 	}
 }
 
