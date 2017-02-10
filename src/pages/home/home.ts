@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController, Slides } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -9,8 +9,13 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   panV:any;
   panEvent:string;
+
+  @ViewChild(Slides) slides: Slides;
   constructor(public navCtrl: NavController) {
     console.log('DONE')
+  }
+  ngAfterViewInit() {
+    this.slides.direction = 'vertical';
   }
   tapEvent(event){
     console.log (event.additionalEvent, event.angle)
