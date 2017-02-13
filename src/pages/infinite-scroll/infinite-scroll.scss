@@ -6,8 +6,8 @@ page-infinite-scroll {
 	}
 	.empty{
 		height: 56px;
-		// margin-bottom: -25px;
 	}
+    // overwrite list styles
     .list-container{
         top: 112px;
         .item,.item-inner.item-inner{
@@ -47,7 +47,6 @@ page-infinite-scroll {
             }
         }
     }
-
     ion-slide{
         &:first-child{
             .blogs{

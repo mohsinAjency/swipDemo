@@ -16,6 +16,8 @@
 // automatically applied to the <body> element in the app.
 
 
+// Common App header
+
 .custom-header{
 	background-color: #fff;
 	display: flex;
@@ -44,6 +46,7 @@
 			    b{
 			    	font-weight: 500;
 					font-size: 0.95em;
+					color: #000;
 			    }
 			    .total{
 			    	display: block;
@@ -66,6 +69,7 @@
 }
 
 
+// Tabs styling
 
 .tabs.tabs{
     .tabbar{
@@ -89,6 +93,7 @@
 }
 
 
+// Common Blog cards
 
 .blogs{
 	margin: 0;
