@@ -13,39 +13,35 @@ import { NavController, NavParams , Slides} from 'ionic-angular';
 })
 export class InfiniteScrollPage {
   items: any;
+  color: string;
   @ViewChild(Slides) slides: Slides;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.color = 'red';
     this.items = [
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"},
-      {id:1,name:"rrrr"}
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'},
+      {id:1,name:"rrrr",image:'assets/card-1.png'},
+      {id:1,name:"rrrr",image:'assets/card-2.png'},
+      {id:1,name:"rrrr",image:'assets/rocket.jpg'}
     ]
   }
 

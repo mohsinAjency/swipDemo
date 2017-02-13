@@ -19,11 +19,11 @@
    <ion-list [virtualScroll]="items" class="list-container">
 
   <ion-item *virtualItem="let item">
-      <div class="blogs">
+      <div class="blogs" [style.background-image]="'url(' + item.image + ')'">
         <ion-card class="blogs__content">
           <!-- card header -->
           <div class="blogs__content__header">
-              <div class="author">20/12 <span class="author__name">Patanjali Pahwa</span></div>
+              <div class="author">20/12<span class="author__name">Patanjali Pahwa</span></div>
           </div>
           <!-- card body -->
           <div class="blogs__content__body">
