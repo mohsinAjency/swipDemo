@@ -4,58 +4,50 @@ page-infinite-scroll {
 			background-image: none;
 		}
 	}
-	.custom-header{
-		background-color: #fff;
-    	display: flex;
-    	align-items: center;
-    	justify-content: space-between;
-    	.toolbar-background{
-    		background: transparent;
-    	}
-    	.toolbar-content{
-    		display: flex;
-    		align-items: center;
-    		justify-content: space-between;
-    		.header-data{
-    			display: inline-flex;
-    			&.ion-md-arrow-back{
-    				flex: 0.6;
-				    display: inline-flex;
-				    font-size: 1.8em;
-				    color: #ff353b;
-    				padding-left: 10px;
-    			}
-    			&.section-title{
-    				flex: 2;
-				    display: inline-flex;
-				    text-align: center;
-				    b{
-				    	font-weight: 500;
-    					font-size: 0.95em;
-				    }
-				    .total{
-				    	display: block;
-    					font-size: 0.65em;
-    					font-weight: 400;
-				    }
-    			}
-    			&.filter{
-    				flex: 1;
-				    display: inline-flex;
-    				text-align: right;
-    				.toolbar-title{
-    					color: #ff353b;
-    					font-size: 1.2em;
-    					font-weight: 400;
-    				}
-    			}
-    		}
-    	}
-	}
 	.empty{
 		height: 56px;
 		// margin-bottom: -25px;
 	}
+    .list-container{
+        top: 112px;
+        .item,.item-inner.item-inner{
+            padding: 0;
+            border: 0;
+            .input-wrapper{
+                display: block;
+                height: 285px;
+                ion-label{
+                    margin: 0;
+                    overflow: initial;
+                }
+            }
+        }
+        .item{
+            &:first-child{
+                .input-wrapper{
+                    height: calc(100vh - 110px);
+                }
+            }
+            &:not(:first-child){
+                .blogs{
+                    height: 250px;
+                    &__content{
+                        width: 90%;
+                        &__header,&__footer{
+                            color: #4c4c4c;
+                        }
+                        &__body{
+                            .post-title{
+                                color: #9c9c9c;
+                                font-size: 1.15em;
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+    }
+
     ion-slide{
         &:first-child{
             .blogs{
@@ -76,84 +68,24 @@ page-infinite-scroll {
 		align-items: flex-start;
 	}
 	.blogs{
-		margin: 0;
-		background-image: url('../assets/rocket.jpg');
-    	background-repeat: no-repeat;
-    	background-size: cover;
-    	background-position: center;
-    	height: calc(100vh - 138px);
-    	// background-position: 30% 0;
-    	display: flex;
-    	align-items: flex-end;
 		&__content{
-			margin: 0;
-    		position: relative;
-    		top: 20px;
-    		width: 65%;
-    		padding: 15px;
-    		text-align: left;
-    		&__header{
-    			padding-top: 5px;
-			    font-size: 0.85em;
-			    font-weight: 500;
-			    color: #808080;
-			    .author{
-			    	text-transform: uppercase;
-			    	&__name{
-			    		margin-left: 5px;
-			    	}
-			    }
-    		}
-    		&__body{
-    			.post-title{
-			    	padding: 10px 0;
-			    	line-height: 1.4;
-			    	font-size: 1.5em;
-			    	margin: 0;
-			    }
-    		}
-    		&__footer{
-    			display: flex;
-    			align-items: center;
-    			justify-content: space-between;
-    			.comment{
-    				text-transform: uppercase;
-    				font-weight: 500;
-    				color: #808080;
-    				font-size: 0.85em;
-    			}
-    			.actions{
-    				color: rgba(128, 128, 128, 0.51);
-    				.icon{
-						padding-left: 10px;
-						.ion-md-redo{
-							font-weight: 600;
-						}
-    				}
-    			}
-    		}
+            white-space: initial;
 		}
-		&.version-2{
-			background-image: url('../assets/card-1.png');
-		}
-		&.version-3{
-			background-image: url('../assets/card-2.png');
-		}
-        &.short{
-            height: 250px;
-            .blogs__content{
-                width: 90%;
-                &__header,&__footer{
-                    color: #4c4c4c;
-                }
-                &__body{
-                    .post-title{
-                        color: #9c9c9c;
-                        font-size: 1.15em;
-                    }
-                }
-            }
-        }
+        // &.short{
+        //     height: 250px;
+        //     .blogs__content{
+        //         width: 90%;
+        //         &__header,&__footer{
+        //             color: #4c4c4c;
+        //         }
+        //         &__body{
+        //             .post-title{
+        //                 color: #9c9c9c;
+        //                 font-size: 1.15em;
+        //             }
+        //         }
+        //     }
+        // }
 	}
 }
 

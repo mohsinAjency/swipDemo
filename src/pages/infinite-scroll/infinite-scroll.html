@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar class="custom-header">
-    <ion-icon name="arrow-back" class="header-data"></ion-icon>
+    <ion-icon name="menu" class="header-data nav-icon"></ion-icon>
     <ion-title class="header-data section-title"><b>Management</b><span class="total">120 Article - 14 Unread</span></ion-title>
     <ion-title class="header-data filter">Filter</ion-title>
   </ion-navbar>
@@ -16,7 +16,7 @@
    
    <!-- blog card -->
    <!-- <div class="empty"></div> -->
-   <ion-list [virtualScroll]="items">
+   <ion-list [virtualScroll]="items" class="list-container">
 
   <ion-item *virtualItem="let item">
       <div class="blogs">
